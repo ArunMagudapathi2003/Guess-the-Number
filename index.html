@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guess the Number</h1>
+    
+
+    <div id="name-container">
+        
+        <h2>Enter Your Name:</h2>
+        <input type="text" id="player-name" placeholder="Your Name">
+        <button onclick="startGame()">   Start  </button>
+        
+    
+    </div>
+    <div id="game-container">
+        <h2>Guess the 4-digit Number</h2>
+        <p id="timer">Time: 0 seconds</p>
+        <input type="text" id="player-guess" placeholder="Enter 4 digits" maxlength="4">
+        <button onclick="submitGuess()">Submit</button>
+        <button onclick="reloadPage()">new game</button>
+        <p id="feedback"></p>
+        <p>Attempts: <span id="attempts">0</span></p>
+    </div>
+
+    <div id="leaderboard">
+        <h2>Best Score</h2>
+        <p id="best-score">No scores yet!</p>  
+    
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
